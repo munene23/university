@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University website design</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,600&display=swap"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="eduford_img/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu"></i>
+          <ul>
+            <li><a href="https://www.facebook.com/">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Bad mind Energy University</h1>
+        <p>
+          Bad mind energy school, for the roughest and toughest, where you can
+          feel the power and intensity in every corner. This is not your typical
+          educational institution; it's a place where resilience is cultivated,
+          and challenges are embraced. <br />
+          Here, you'll find a community of individuals unafraid to face
+          adversity head-on and transform it into opportunities for growth. The
+          atmosphere resonates with determination and ambition, fostering an
+          environment where greatness is born. Step inside and experience the
+          relentless spirit that drives success, as you embark on a journey of
+          self-discovery and achievement.
+        </p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+      </div>
+    </section>
+    <script>
+      var navLinks = document.getElementById(navLinks);
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
